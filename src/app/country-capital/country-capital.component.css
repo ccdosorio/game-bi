@@ -1,0 +1,16 @@
+.buttons--grid {
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-gap: 5px;
+}
+
+.button--selected {
+  background-color: blue;
+  color: white;
+}
+
+.button--error {
+  background-color: red;
+  color: white;
+}

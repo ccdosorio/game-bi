@@ -1,0 +1,7 @@
+<div class="buttons--grid" *ngIf="arrayElements.length > 0; else elseBlock">
+    <div *ngFor="let item of arrayElements; let i = index">
+        <button (click)="selectOption(item, i)" id="option-{{ i }}">{{ item }}</button>
+    </div>
+</div>
+<ng-template #elseBlock>Congratulations!</ng-template>
+
